@@ -88,8 +88,8 @@ def rename_image_ref(m, original=True):
                     # 将img_name_new设置为img_stem+"_"+str(i)+img_suffix
                     img_name_new = img_stem+"_"+str(i)+img_suffix
                     i += 1  # 计数器i加1
-
-            copyfile(full_img_path, op.join(  # 将full_img_path复制到image_folder_path中
+            # 将full_img_path复制到image_folder_path中
+            copyfile(full_img_path, op.join(
                 args.image_folder_path, img_name_new))
             # 将full_img_path设置为image_folder_path中的img_name_new
             full_img_path = op.join(args.image_folder_path, img_name_new)
