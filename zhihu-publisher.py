@@ -68,6 +68,7 @@ def formula_ops(_lines):
 # The support function for image_ops. It will take in a matched object and make sure they are competible
 
 
+# 定义一个函数，用于重命名图片引用
 def rename_image_ref(m, original=True):
     # global image_folder_path
     # 如果original为True，则取m.group(2)，否则取m.group(1)
